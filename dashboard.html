@@ -8,6 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <style>
+        th{
+            text-align: center;
+        }
+
+        td{
+            text-align: center;
+        }
+
+    </style>
+
 </head>
 <body>
     
@@ -25,13 +36,14 @@
   </div>
 
   <div class="my-3 p-3 bg-white rounded shadow-sm">
-    <table class="table">
+    <table class="table ">
         <thead class="thead-dark">
           <tr>
             <th scope="col">#</th>
             <th scope="col">Date</th>
             <th scope="col">Place</th>
             <th scope="col">Time</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
@@ -40,18 +52,23 @@
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td><button type="button" class="btn btn-danger">Cancel</button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
             <td>@fat</td>
+            <td><button type="button" class="btn btn-danger">Cancel</button></td>
+
           </tr>
           <tr>
             <th scope="row">3</th>
             <td>Larry</td>
             <td>the Bird</td>
             <td>@twitter</td>
+            <td><button type="button" class="btn btn-danger">Cancel</button></td>
+
           </tr>
         </tbody>
       </table>

@@ -6,21 +6,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="assets/css/login.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+
+  <style>
+    .submit{
+      border-radius: 30px;
+      width: 260px;
+      height: 36px;
+      margin-left: 27%;
+      color: white;
+      padding-top: 7px;
+    }
+  </style>
+
 </head>
 <body>
   <div class="cont">
+    <form class="post-form" action="savedata.php" method="POST">
     <div class="form sign-in">
       <h2>Sign In</h2>
+      <!-- <label>
+        <span>Name</span>
+        <input type="text" name="userName"/>
+      </label> -->
       <label>
-        <span>Email Address</span>
-        <input type="email" name="email">
+        <span>Email</span>
+        <input type="email" name="emailId"/>
       </label>
       <label>
         <span>Password</span>
-        <input type="password" name="password">
+        <input type="password" name="password"/>
       </label>
-      <button class="submit" type="button" ><a href="index.html">SIGN IN</a></button>
-      <p class="forgot-pass">Forgot Password ?</p>
+      <!-- <label>
+        <span>Confirm Password</span>
+        <input type="password"/>
+      </label> -->
+      <!--<a href="dashboard.html"></a>-->
+      <input class="submit" type="submit" value="SIGN IN"/>
+       <!--<button type="submit" onclick="myFunction()"  class="submit" id="myButton" value="SIGN UP">SIGN UP</button>-->
+      <!-- <p class="forgot-pass">Forgot Password ?</p> -->
 
       <!-- <div class="social-media">
         <ul>
@@ -31,6 +54,7 @@
         </ul>
       </div> -->
     </div>
+    </form>
 
     <div class="sub-cont">
       <div class="img">
